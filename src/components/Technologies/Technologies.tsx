@@ -39,7 +39,7 @@ const Technologies = ({ techPromise }: TechType) => {
         setStack(remainingStack);
 
         if (selectedTechnology) {
-            toast.success(
+            toast.error(
                 `${selectedTechnology.name} removed from stack`
             );
         }
@@ -53,7 +53,7 @@ const Technologies = ({ techPromise }: TechType) => {
 
         setStack([]);
 
-        toast.success("All technologies removed");
+        toast.error("All technologies removed");
     };
 
     return (
@@ -64,8 +64,8 @@ const Technologies = ({ techPromise }: TechType) => {
             <div className="mx-auto max-w-[1120px] px-5">
                 <div className="mb-8">
                     <h2 className="text-3xl font-bold text-slate-950">
-                        Explore the{" "}
-                        <span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+                        Explore the
+                        <span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent px-2">
                             Technologies
                         </span>
                     </h2>

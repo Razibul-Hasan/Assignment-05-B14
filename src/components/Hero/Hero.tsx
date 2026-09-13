@@ -7,11 +7,11 @@ const Hero = () => {
                 className="
                     mx-auto flex max-w-[1120px]
                     flex-col items-center
-                    px-5 py-12
-                    md:min-h-[420px]
+                    px-5 py-3
+                    md:min-h-75
                     md:flex-row
                     md:justify-between
-                    md:py-16
+                    md:py-3
                 "
             >
                 <div
