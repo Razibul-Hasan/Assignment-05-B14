@@ -27,7 +27,7 @@ const Navbar = () => {
                 <nav className="hidden flex-1 items-center justify-center gap-8 md:flex">
 
                     <a
-                        href="#"
+                        href="/"
                         className="text-[13px] font-medium text-pink-500"
                     >
                         Home
@@ -66,14 +66,14 @@ const Navbar = () => {
                 <div className="flex flex-1 items-center justify-end gap-3 md:gap-5">
 
                     <a
-                        href="/login"
+                        href="#"
                         className="whitespace-nowrap text-[10px] font-semibold text-slate-600 md:text-[13px]"
                     >
                         Sign In
                     </a>
 
                     <a
-                        href="/signup"
+                        href="#"
                         className="
                             whitespace-nowrap
                             rounded-full

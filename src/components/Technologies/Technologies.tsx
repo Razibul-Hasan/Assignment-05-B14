@@ -2,7 +2,7 @@ import { use, useState } from "react";
 import { toast } from "react-toastify";
 import type { Technology } from "../../type/technology";
 import TechnologyCard from "./TechnologyCard";
-import Stack from "./Stack";
+import Stack from "./StackCard";
 interface TechType {
     techPromise: Promise<Technology[]>;
 }

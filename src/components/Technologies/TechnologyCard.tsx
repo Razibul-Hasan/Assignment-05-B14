@@ -54,8 +54,8 @@ const TechnologyCard = ({
                     onClick={() => handleAddToStack(technology)}
                     disabled={isAdded}
                     className={`w-full rounded-md py-2.5 text-xs font-medium transition ${isAdded
-                            ? "cursor-not-allowed bg-slate-300 text-slate-500"
-                            : "bg-slate-950 text-white hover:bg-slate-800"
+                        ? "cursor-not-allowed bg-slate-300 text-slate-500"
+                        : "bg-slate-950 text-white hover:bg-slate-800"
                         }`}
                 >
                     {isAdded ? "Added" : "Add to Stack"}
