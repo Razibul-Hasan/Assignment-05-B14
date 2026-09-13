@@ -1,35 +1,31 @@
 import logo from "../../assets/logo-text.png";
 import { BsJustify } from "react-icons/bs";
 
-
-
 const Navbar = () => {
     return (
-        <header className="w-full border-b border-gray-100 bg-white">
-            <div
-                className="
-                    mx-auto grid h-[70px] max-w-[1120px]
-                    grid-cols-[1fr_auto_1fr] items-center px-5
-                    md:flex
-                "
-            >
-                <div className="flex items-center justify-start md:hidden cursor-pointer">
-                    <BsJustify className="text-3xl text-black" />
+        <header className="w-full border-b border-gray-200 bg-white">
+
+            <div className="mx-auto flex h-[70px] max-w-[1120px] items-center px-4 md:px-5">
+
+                <div className="flex flex-1 items-center justify-start md:hidden">
+                    <button className="text-2xl text-gray-500">
+                        <BsJustify />
+                    </button>
                 </div>
 
-                <a
-                    href="/"
-                    className="flex items-center justify-center md:justify-start px-5"
-                >
-                    <img
-                        src={logo}
-                        alt="Logo"
-                        className="h-10 w-[150px] object-contain md:h-8 md:w-auto "
-                    />
-                </a>
 
+                <div className="flex flex-1 items-center justify-center md:justify-start">
+                    <a href="/">
+                        <img
+                            src={logo}
+                            alt="DevStack Logo"
+                            className="h-8 w-auto object-contain"
+                        />
+                    </a>
+                </div>
 
-                <nav className="ml-auto hidden items-center gap-8 md:flex">
+                <nav className="hidden flex-1 items-center justify-center gap-8 md:flex">
+
                     <a
                         href="#"
                         className="text-[13px] font-medium text-pink-500"
@@ -64,13 +60,14 @@ const Navbar = () => {
                     >
                         Contact
                     </a>
+
                 </nav>
 
+                <div className="flex flex-1 items-center justify-end gap-3 md:gap-5">
 
-                <div className="flex items-center gap-4 justify-self-end md:ml-8 md:gap-5">
                     <a
                         href="/login"
-                        className="whitespace-nowrap text-[13px] font-semibold text-slate-600"
+                        className="whitespace-nowrap text-[10px] font-semibold text-slate-600 md:text-[13px]"
                     >
                         Sign In
                     </a>
@@ -78,16 +75,28 @@ const Navbar = () => {
                     <a
                         href="/signup"
                         className="
-                            whitespace-nowrap rounded-full
-                            bg-gradient-to-r from-pink-400 to-pink-600
-                            px-5 py-2 text-[13px] font-semibold
-                            text-white shadow-sm
+                            whitespace-nowrap
+                            rounded-full
+                            bg-gradient-to-r
+                            from-pink-400
+                            to-pink-600
+                            px-3
+                            py-1.5
+                            text-[10px]
+                            font-semibold
+                            text-white
+                            md:px-5
+                            md:py-2
+                            md:text-[13px]
                         "
                     >
                         Sign Up
                     </a>
+
                 </div>
+
             </div>
+
         </header>
     );
 };
