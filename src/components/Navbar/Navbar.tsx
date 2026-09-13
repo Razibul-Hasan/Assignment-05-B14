@@ -3,7 +3,7 @@ import { BsJustify } from "react-icons/bs";
 
 const Navbar = () => {
     return (
-        <header className="w-full border-b border-gray-200 bg-white">
+        <header className="w-full border-b border-gray-200 bg-white sticky top-0">
 
             <div className="mx-auto flex h-[70px] max-w-[1120px] items-center px-4 md:px-5">
 
